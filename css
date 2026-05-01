@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: red;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #000, #1a0000);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: red;
+}
+
+.hero p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: red;
+}
+
+/* PROJECTS */
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 20px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
